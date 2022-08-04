@@ -9,7 +9,7 @@ document.getElementById("gold").innerHTML = gold;
 document.getElementById("pop").innerHTML = pop;
 document.getElementById("souls").innerHTML = souls;
 
-function chopWood() {
-    wood = wood + 2;
+function chopWood(val) {
+    wood += val;
     document.getElementById("wood").innerHTML = wood;
 }
