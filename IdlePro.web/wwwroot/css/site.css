@@ -1,0 +1,86 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#next{
+    transition: opacity ease-in-out;
+    opacity: 0;
+}
+
+.fade-in-title{
+    animation: fadeIn 5s;
+
+}
+    .fade-in-title h1{
+        display: inline;
+    }
+    .fade-in-title div{
+        display: inline;
+        margin-left:30%;
+    }
+    .fade-in-title h5 {
+        display: inline;
+        margin-left:3%;
+
+    }
+.fade-in-content {
+    animation: fadeInDelay 3s;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fadeInDelay{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.buttons{
+    margin-top:5%;
+    margin-left:20%;
+}
+.buttons p{
+
+}
+    .buttons b {
+        margin-top: 3%;
+        width: 15%;
+       
+    }
+        .buttons b:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .buttons b:active {
+            transform: translateY(4px);
+        } 
+
+.resource-values{
+    margin-left:70%;
+}

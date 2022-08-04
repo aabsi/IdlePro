@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+    <div class="fade-in-title">
+        <h1 class="display-4">Project Idle</h1>
+        <div>
+        <h5>Wood: <span class="resource-value" id="wood"></span></h5>
+        <h5>Gold: <span class="resource-value" id="gold"></span></h5>
+        <h5>Population: <span class="resource-value" id="pop"></span></h5>
+        <h5>Souls: <span class="resource-value" id="souls"></span></h5>
+        </div>
+    </div>
+    <div class="fade-in-content">
+    <br /><br /><br />
+    <div class="resource-values">
+    </div>
+    <div class="buttons">
+
+       <div>
+           <b onclick="chopWood()" class="btn btn-outline-success">Chop Wood</b>
+       </div> 
+
+       <div>
+           <b type="button" onclick="addGoldWithSouls()" class="btn btn-outline-warning ">Sell Souls</b>
+       </div>
+
+    </div>
+    </div>
+
+
+
+
+</body>
+
